@@ -1,0 +1,50 @@
+.para {
+    color: aliceblue;
+}
+
+.FancyButton {
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+    background-color: rgb(34, 114, 206);
+    padding: 10px;
+    border: 1px solid aqua;
+    box-shadow: 0 0px 15px 0 rgb(68, 187, 202);
+    transition-duration: 0.4s;
+}
+
+.FancyButton:hover {
+    background-color: cornflowerblue;
+    font-size: 21px;
+    border: 2px solid aqua;
+}
+
+.FancyButton:active {
+    background-color: white;
+    box-shadow: 0 6px aqua;
+    transform: translateY(2px);
+}
+
+.HeaderButton {
+    font-size: 18px;
+    color: aliceblue;
+    background-color: transparent;
+    border: transparent;
+}
+
+.HeaderButton:hover {
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.InputField {
+    font-size: 27px;
+    width: 50%;
+    margin-bottom: 1.5%;
+    padding: 5px 5px;
+    box-shadow: 0 -1px 12px 0 rgb(28, 33, 34) inset;
+}
+.InputField:focus {
+    outline: none;
+}
+

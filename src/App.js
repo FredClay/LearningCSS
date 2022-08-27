@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import HelloWorld from './basicComponents/HelloWorld';
+
 import './App.css';
+import AllPurposeFooter from './basicComponents/AllPurposeFooter';
+import SecondPage from './basicComponents/SecondPage';
+import AllPurposeHeader from './basicComponents/AllPurposeHeader';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <AllPurposeHeader />
+      <Routes>
+        <Route path='/' element={<HelloWorld />} />
+        <Route path='/inputPage' element={<SecondPage />} />
+      </Routes>  
+        <AllPurposeFooter />
+      </div>
+    </BrowserRouter>
   );
 }
 
